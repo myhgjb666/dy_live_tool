@@ -1,0 +1,42 @@
+# robots.txt · 直播弹幕助手
+# 主域名：https://dylive.tgmship.com/
+
+# ---------- 百度（Baiduspider 各子 UA 分组，显式声明更利于抓取） ----------
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Baiduspider-render
+Allow: /
+
+User-agent: Baiduspider-image
+Allow: /
+
+User-agent: Baiduspider-favo
+Allow: /
+
+User-agent: Baiduspider-video
+Allow: /
+
+# ---------- 其他国内搜索引擎 ----------
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: YisouSpider
+Allow: /
+
+# ---------- 海外搜索引擎 ----------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# ---------- 其余全部放行 ----------
+User-agent: *
+Allow: /
+
+# 站点地图（协议为 HTTPS，且必须与 index.html 的 canonical 域名一致）
+Sitemap: https://dylive.tgmship.com/sitemap.xml

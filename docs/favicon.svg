@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="直播弹幕助手">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fe2c55"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#g)"/>
+  <rect x="13" y="17" width="26" height="16" rx="6" fill="#ffffff" opacity=".95"/>
+  <path d="M20 33 L20 40 L28 33 Z" fill="#ffffff" opacity=".95"/>
+  <rect x="25" y="36" width="27" height="15" rx="6" fill="#ffffff" opacity=".75"/>
+  <path d="M44 51 L44 57 L37 51 Z" fill="#ffffff" opacity=".75"/>
+  <circle cx="21.5" cy="25" r="1.9" fill="#fe2c55"/>
+  <circle cx="27" cy="25" r="1.9" fill="#fe2c55"/>
+  <circle cx="33.5" cy="43.5" r="1.8" fill="#a855f7"/>
+  <circle cx="40" cy="43.5" r="1.8" fill="#a855f7"/>
+  <circle cx="46.5" cy="43.5" r="1.8" fill="#a855f7"/>
+</svg>

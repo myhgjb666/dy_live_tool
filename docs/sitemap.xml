@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  站点地图 · 直播弹幕助手
+  主域名：https://dylive.tgmship.com/（必须与各页 canonical 完全一致）
+  新增子页面时按同样格式追加 <url> 节点，并在百度搜索资源平台重新提交本文件。
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/">
+
+  <url>
+    <loc>https://dylive.tgmship.com/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <url>
+    <loc>https://dylive.tgmship.com/guide</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <url>
+    <loc>https://dylive.tgmship.com/download</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+</urlset>

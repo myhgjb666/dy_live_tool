@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+     ★ 百度 SEO 配置区（主域名已统一为 https://dylive.tgmship.com/）
+     · 全站域名必须一致：canonical / og:url / sitemap.xml / robots.txt
+     · 更换域名时执行 ./set-domain.sh 你的新域名.com 一键同步
+     ============================================================ -->
+<title>抖音直播弹幕助手_直播间自动回复与场控工具-Windows版下载</title>
+<meta name="description" content="抖音直播弹幕助手（Windows 桌面端）：扫码登录自己的抖音账号，实时监听直播间弹幕，关键字固定话术或大模型自动回复，支持进场欢迎、礼物感谢、定时弹幕、口令计数与本场简报，规则与密钥仅存本机。">
+<meta name="keywords" content="抖音直播弹幕助手,直播间自动回复软件,抖音弹幕自动回复工具,直播间关键字回复,直播场控软件,抖音直播助手,进场欢迎,礼物感谢,弹幕计数">
+<link rel="canonical" href="https://dylive.tgmship.com/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="author" content="直播弹幕助手">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- 站点图标（百度搜索结果会展示站点 icon） -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/screenshots/01-main.png">
+
+<!-- ★ 百度搜索资源平台 → 用户中心 → 站点管理 → HTML 标签验证，把验证码粘到下面 -->
+<meta name="baidu-site-verification" content="codeva-替换为你的验证码">
+
+<!-- 社交分享（微信/QQ/微博 抓取缩略图） -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="直播弹幕助手">
+<meta property="og:title" content="抖音直播弹幕助手 - 直播间自动回复与场控工具（Windows）">
+<meta property="og:description" content="扫码登录自己的抖音账号，弹幕实时同屏；关键字固定话术或大模型自动回复，进场欢迎、礼物感谢、定时弹幕、口令计数一站搞定。">
+<meta property="og:url" content="https://dylive.tgmship.com/">
+<meta property="og:image" content="https://dylive.tgmship.com/screenshots/01-main.png">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="抖音直播弹幕助手 - 直播间自动回复与场控工具（Windows）">
+<meta name="twitter:description" content="扫码登录自己的抖音账号，弹幕实时同屏；关键字固定话术或大模型自动回复，进场欢迎、礼物感谢、定时弹幕、口令计数一站搞定。">
+<meta name="twitter:image" content="https://dylive.tgmship.com/screenshots/01-main.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "直播弹幕助手",
+  "alternateName": "LiveAssistant",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Windows",
+  "softwareVersion": "1.0.0",
+  "description": "Windows 桌面端抖音直播间场控工具：扫码登录自己的抖音账号，实时监听弹幕，关键字固定话术或大模型自动回复，支持进场欢迎、礼物感谢、定时弹幕、口令计数与本场简报。",
+  "url": "https://dylive.tgmship.com/",
+  "downloadUrl": "https://gitee.com/jiangbo/dy_live_tool/releases",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CNY",
+    "description": "新设备首次注册赠 1 天试用，正式版按设备授权"
+  },
+  "featureList": [
+    "抖音扫码登录",
+    "多账号配置（主号/小号规则分开）",
+    "实时弹幕监听（弹幕/礼物/进场同屏）",
+    "直播间收藏一键开听",
+    "关键字自动回复（固定话术/大模型）",
+    "进场欢迎与礼物感谢",
+    "关键字自动关注",
+    "定时弹幕与快捷话术",
+    "发送排队与冷却优先级",
+    "弹幕口令计数与名单导出",
+    "本场简报",
+    "带货/互动/抽奖场景模板",
+    "兼容 OpenAI /v1 接口，密钥仅存本机"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "直播弹幕助手是抖音官方产品吗？会不会违规？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不是抖音官方产品。软件使用你自己的抖音账号扫码登录，只辅助你对自己有权操作的直播间做弹幕互动与场控。请遵守平台规则与当地法律，不要用于骚扰、刷量、违规引流或未授权采集他人数据。软件内置发送排队与冷却机制、同一人一场只欢迎/感谢一次，避免刷屏行为。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "抖音直播间关键字自动回复怎么设置？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "打开软件右上角的自动化设置，在回复页签中勾选自动回复，添加关键字与对应话术即可。每条规则支持固定话术或大模型生成，支持 {昵称} 变量与多句随机轮换；也可以直接套用带货、互动、抽奖三类场景模板快速开始。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AI 回复用什么大模型？密钥安全吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "软件兼容 OpenAI /v1 接口，填入接口地址与密钥即可接入主流大模型。密钥与全部规则配置仅保存在本机 exe 同目录的 datas/ 文件夹中，不上传云端。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "支持多账号吗？主号和小号怎么分开管理？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "支持。主号与小号的回复规则、直播间收藏相互独立保存，扫码切换抖音账号后自动加载对应配置，适合一个团队同时运营多个直播间的场景。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "弹幕计数和本场简报有什么用？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "弹幕计数自动统计扣 1 等口令人数，可导出明细名单、复制昵称，抽奖与活动核销直接用；本场简报汇总本场数据并提示未命中关键词，方便下播后复盘和补充回复规则。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "一台电脑可以登录几个抖音号？到期后怎么续期？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "软件账号与设备一一绑定，一个软件账号绑定一台电脑，新设备首次注册赠送 1 天试用；到期后联系管理员在后台续期即可，抖音账号扫码切换不受限制。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "直播弹幕助手",
+  "url": "https://dylive.tgmship.com/",
+  "sameAs": [
+    "https://gitee.com/jiangbo/dy_live_tool",
+    "https://github.com/myhgjb666/dy_live_tool"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "直播弹幕助手",
+  "alternateName": "抖音直播弹幕助手",
+  "url": "https://dylive.tgmship.com/",
+  "inLanguage": "zh-CN",
+  "description": "抖音直播间自动回复与场控工具官方网站，提供 Windows 客户端下载、使用教程与常见问题解答。",
+  "publisher": { "@type": "Organization", "name": "直播弹幕助手" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "抖音直播间关键字自动回复怎么设置",
+  "description": "三步在直播弹幕助手（Windows）中开启抖音直播间关键字自动回复与场控功能。",
+  "totalTime": "PT10M",
+  "tool": [{ "@type": "HowToTool", "name": "直播弹幕助手 Windows 客户端" }],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "下载并注册",
+      "text": "下载 LiveAssistant 安装包，双击运行并注册软件账号，新设备首次注册赠送 1 天试用。"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "抖音扫码并开始监听",
+      "text": "用抖音 App 扫码登录自己的账号，粘贴直播间地址点击开始监听，或从收藏列表一键开听。"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "配置自动化规则",
+      "text": "打开自动化设置，配置关键字回复（固定话术或大模型）、进场欢迎、礼物感谢、定时弹幕与口令计数，也可直接套用场景模板。"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dylive.tgmship.com/" },
+    { "@type": "ListItem", "position": 2, "name": "使用教程", "item": "https://dylive.tgmship.com/guide" },
+    { "@type": "ListItem", "position": 3, "name": "下载与版本", "item": "https://dylive.tgmship.com/download" }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/assets/style.v2.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="/" title="直播弹幕助手 - 抖音直播间自动回复与场控工具">
+      <span class="logo-mark" aria-hidden="true">弹</span>直播弹幕助手
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#features">功能一览</a>
+      <a href="#shots">界面实拍</a>
+      <a href="#compare">竞品对比</a>
+      <a href="/guide">使用教程</a>
+      <a href="#contact">联系购买</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="/download">下载 Windows 版</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Windows 桌面端 · v1.0.0 · 双击即用</span>
+        <h1>用自己的抖音账号<br><em>听直播 · 回弹幕 · 做场控</em></h1>
+        <p class="hero-sub">
+          扫码登录，弹幕实时同屏；关键字自动回复（固定话术或大模型）、进场欢迎、礼物感谢、
+          定时弹幕、口令计数、本场简报——一个人管好一整场直播的公屏。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#download">免费下载（赠 1 天试用）</a>
+          <a class="btn btn-ghost" href="#shots">查看界面实拍</a>
+        </div>
+        <div class="hero-points">
+          <span><i class="dot"></i>扫码登录，无需破解</span>
+          <span><i class="dot"></i>规则与密钥仅存本机</span>
+          <span><i class="dot"></i>主号小号分开管理</span>
+        </div>
+      </div>
+
+      <div class="mock" aria-label="直播弹幕助手主界面截图">
+        <div class="mock-bar"><i></i><i></i><i></i><span>LiveAssistant · 主界面</span></div>
+        <img src="./screenshots/01-main.png" alt="直播弹幕助手主界面：账号登录、直播间监听、收藏与实时弹幕同屏显示" width="836" height="449" fetchpriority="high">
+        <div class="mock-foot"><span>弹幕 / 礼物 / 进场实时同屏</span><span>右上角打开自动化设置</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 功能一览 ============ -->
+  <section id="features">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">功能一览</span>
+        <h2>从听弹幕到做场控，一个软件全包</h2>
+        <p>十几项功能围绕一件事：让公屏互动不断线，让主播专心讲内容</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="ico" aria-hidden="true">📱</div>
+          <h3>抖音扫码登录</h3>
+          <p>用自己的抖音 App 扫码登录，主号、小号规则与收藏分开保存，扫码换号自动切换配置。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">🎧</div>
+          <h3>实时听直播间</h3>
+          <p>弹幕、礼物、进场消息同屏滚动，显示在线人数与贡献榜；常用直播间一键收藏，下次秒开。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">🎯</div>
+          <h3>关键字自动回复</h3>
+          <p>命中关键字即回复：固定话术或多句随机轮换，支持 {昵称} 变量；也可交给大模型生成更自然的回答。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">🤖</div>
+          <h3>大模型接入</h3>
+          <p>兼容 OpenAI /v1 接口，主流大模型都能接；密钥与规则仅存在本机 datas/ 目录，不上传云端。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">👋</div>
+          <h3>进场欢迎 · 礼物感谢</h3>
+          <p>新观众进场自动欢迎、收礼自动感谢，同一人一场只说一次，热情不重复、不刷屏。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">⭐</div>
+          <h3>关键字关注</h3>
+          <p>观众发送指定口令自动关注对方，涨粉互动话术一体化，适合配合抽奖活动使用。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">⏱️</div>
+          <h3>定时弹幕 · 快捷话术</h3>
+          <p>按间隔轮流发送定时内容维持热度；高频话术放进快捷栏，主界面一键发送。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">🚦</div>
+          <h3>发送排队 · 冷却优先级</h3>
+          <p>所有自动回复先进队列，冷却中按优先级排队发出，避免短时间刷屏触发平台限制。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">📊</div>
+          <h3>弹幕计数 · 本场简报</h3>
+          <p>扣 1 等口令自动统计，名单一键导出、昵称一键复制；下播看简报，未命中词一目了然。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">🧩</div>
+          <h3>场景模板</h3>
+          <p>带货、互动、抽奖三套模板一键套用，再按自己的话术微调，五分钟配好一整场。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">🔐</div>
+          <h3>软件账号 · 设备绑定</h3>
+          <p>注册即赠 1 天试用；一账号绑定一台设备，到期后台续期，授权清晰、防盗用。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">🗂️</div>
+          <h3>多账号配置</h3>
+          <p>不同抖音号的回复策略、收藏列表、话术库相互独立，矩阵直播间的场控也能标准化。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 界面实拍 ============ -->
+  <section id="shots" class="shots-wrap">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">界面实拍</span>
+        <h2>长什么样，一眼看明白</h2>
+        <p>以下均为软件实际运行截图（Windows），非渲染效果图</p>
+      </div>
+
+      <div class="shots">
+        <figure class="shot">
+          <img src="./screenshots/01-main.png" alt="直播弹幕助手主界面：账号登录、直播间监听、收藏与实时弹幕同屏" width="836" height="449" loading="lazy">
+          <figcaption><b>主界面</b> · 登录账号、粘贴直播间地址开始监听、实时弹幕同屏，收藏一键开听</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="./screenshots/02-auto-reply.png" alt="自动化设置之关键字回复：自动回复开关、关键字与话术规则列表" width="836" height="449" loading="lazy">
+          <figcaption><b>自动化 · 关键字回复</b> · 逐条配置关键字与话术，支持固定回复与大模型回复</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="./screenshots/03-more.png" alt="自动化设置之场景模板与快捷话术：带货互动抽奖模板、发送排队与优先级" width="836" height="449" loading="lazy">
+          <figcaption><b>自动化 · 更多</b> · 带货/互动/抽奖场景模板、快捷话术、发送排队与优先级</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="./screenshots/04-count.png" alt="自动化设置之弹幕计数：口令人数统计、导出名单与复制昵称" width="836" height="449" loading="lazy">
+          <figcaption><b>自动化 · 弹幕计数</b> · 口令人数统计，明细与名单一键导出、昵称一键复制</figcaption>
+        </figure>
+      </div>
+
+      <div class="video-note">
+        🎬 演示视频位：上线前可在此处嵌入 1～2 分钟操作录屏（注册 → 扫码 → 配置关键字 → 自动回复实测）。
+        替换方式：把本说明替换为 <code>&lt;video controls src="./screenshots/demo.mp4"&gt;&lt;/video&gt;</code> 或 B站 / 腾讯视频外链 iframe 即可。
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 竞品对比 ============ -->
+  <section id="compare">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">竞品对比</span>
+        <h2>同样是直播间自动化，路线决定体验</h2>
+        <p>选型先看实现路线：开箱即用的桌面工具、自己写脚本、还是整套无人直播方案</p>
+      </div>
+
+      <div class="table-scroll">
+        <table>
+          <caption style="position:absolute;left:-9999px">抖音直播间自动回复工具竞品能力对比表</caption>
+          <thead>
+            <tr>
+              <th scope="col">能力维度</th>
+              <th scope="col" class="ours">直播弹幕助手（本产品）</th>
+              <th scope="col">自建脚本（Python 自动化）</th>
+              <th scope="col">无人直播 / 数字人系统</th>
+              <th scope="col">AI 播报类工具</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>上手成本</td>
+              <td class="ours">下载 exe 双击运行，扫码即用</td>
+              <td>需自己开发并持续维护签名与页面结构</td>
+              <td>部署复杂，常需专用硬件</td>
+              <td>SaaS 注册即用</td>
+            </tr>
+            <tr>
+              <td>账号登录</td>
+              <td class="ours">抖音 App 扫码，主号小号配置分开</td>
+              <td>模拟登录，易失效</td>
+              <td>各自方案不一</td>
+              <td>多为平台授权</td>
+            </tr>
+            <tr>
+              <td>弹幕监听</td>
+              <td class="ours"><span class="yes">实时同屏</span>：弹幕/礼物/进场 + 贡献榜</td>
+              <td>需自建链路</td>
+              <td>部分支持</td>
+              <td>仅用于触发播报</td>
+            </tr>
+            <tr>
+              <td>回复能力</td>
+              <td class="ours"><span class="yes">固定话术 + 大模型</span>双模式，{昵称} 变量、多句随机</td>
+              <td>全部自己写</td>
+              <td>问答库检索为主</td>
+              <td>固定模板播报</td>
+            </tr>
+            <tr>
+              <td>场控配套</td>
+              <td class="ours"><span class="yes">完整</span>：欢迎/感谢/关注/定时/排队/计数/简报</td>
+              <td>逐个功能自建</td>
+              <td>偏重画面生成，互动功能弱</td>
+              <td>基本没有</td>
+            </tr>
+            <tr>
+              <td>防刷屏设计</td>
+              <td class="ours">发送排队 + 冷却优先级 + 一场一次去重</td>
+              <td>需自行实现</td>
+              <td>不适用</td>
+              <td>不适用</td>
+            </tr>
+            <tr>
+              <td>数据与密钥</td>
+              <td class="ours">仅存本机 datas/ 目录，不上云</td>
+              <td>本机</td>
+              <td>各异</td>
+              <td>多存云端</td>
+            </tr>
+            <tr>
+              <td>适合谁</td>
+              <td class="ours">主播、场控、直播工作室、多号矩阵运营</td>
+              <td>有开发能力的团队</td>
+              <td>无人直播玩家</td>
+              <td>只要语音播报的场景</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">
+        说明：以上对比基于各方案公开的技术路线整理，用于说明不同路线的能力边界，具体产品功能请以其官方说明为准。
+        如果你的核心诉求是「一个人管住整场公屏」——回复、欢迎、感谢、计数、复盘一体化，桌面端场控工具是投入产出比最高的路线。
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 上手步骤 ============ -->
+  <section id="start" class="steps-wrap">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">三步上手</span>
+        <h2>下载到自动回复跑起来，不到十分钟</h2>
+        <p>更细的分步说明与每个设置页签的截图，见 <a href="/guide" style="color:#fe2c55;font-weight:600">使用教程</a></p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>下载并注册</h3>
+          <p>到 Gitee / GitHub Releases 下载带版本号的安装包（如 LiveAssistant-v1.0.0.exe），双击运行，注册软件账号（新设备赠 1 天试用）。</p>
+        </div>
+        <div class="step">
+          <h3>抖音扫码 · 开始监听</h3>
+          <p>用自己的抖音 App 扫码登录，粘贴直播间地址点「开始监听」，或从收藏一键开听。</p>
+        </div>
+        <div class="step">
+          <h3>配置自动化</h3>
+          <p>右上角打开「自动化设置」：配关键字回复（固定话术或大模型）、欢迎感谢、定时与计数，也可先套用场景模板。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 适用场景 ============ -->
+  <section id="scenarios">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">适用场景</span>
+        <h2>谁在用直播弹幕助手</h2>
+      </div>
+      <div class="grid-4">
+        <div class="pill-card"><strong>带货直播</strong><span>价格、库存、怎么买，关键字秒回不漏人</span></div>
+        <div class="pill-card"><strong>互动抽奖</strong><span>口令计数自动统计，中奖名单一键导出</span></div>
+        <div class="pill-card"><strong>多号矩阵</strong><span>主号小号规则分开，扫码切换自动套配置</span></div>
+        <div class="pill-card"><strong>一人团队</strong><span>边播边控，欢迎感谢定时弹幕全自动</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="shots-wrap">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">常见问题</span>
+        <h2>下载前你可能想问</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>直播弹幕助手是抖音官方产品吗？会不会违规？</summary>
+          <p>不是抖音官方产品。软件使用你自己的抖音账号扫码登录，只辅助你对自己有权操作的直播间做弹幕互动与场控。请遵守平台规则与当地法律，不要用于骚扰、刷量、违规引流或未授权采集他人数据。软件内置发送排队与冷却机制、同一人一场只欢迎/感谢一次，避免刷屏行为。</p>
+        </details>
+        <details>
+          <summary>抖音直播间关键字自动回复怎么设置？</summary>
+          <p>打开软件右上角的自动化设置，在回复页签中勾选自动回复，添加关键字与对应话术即可。每条规则支持固定话术或大模型生成，支持 {昵称} 变量与多句随机轮换；也可以直接套用带货、互动、抽奖三类场景模板快速开始。</p>
+        </details>
+        <details>
+          <summary>AI 回复用什么大模型？密钥安全吗？</summary>
+          <p>软件兼容 OpenAI /v1 接口，填入接口地址与密钥即可接入主流大模型。密钥与全部规则配置仅保存在本机 exe 同目录的 datas/ 文件夹中，不上传云端。</p>
+        </details>
+        <details>
+          <summary>支持多账号吗？主号和小号怎么分开管理？</summary>
+          <p>支持。主号与小号的回复规则、直播间收藏相互独立保存，扫码切换抖音账号后自动加载对应配置，适合一个团队同时运营多个直播间的场景。</p>
+        </details>
+        <details>
+          <summary>弹幕计数和本场简报有什么用？</summary>
+          <p>弹幕计数自动统计扣 1 等口令人数，可导出明细名单、复制昵称，抽奖与活动核销直接用；本场简报汇总本场数据并提示未命中关键词，方便下播后复盘和补充回复规则。</p>
+        </details>
+        <details>
+          <summary>一台电脑可以登录几个抖音号？到期后怎么续期？</summary>
+          <p>软件账号与设备一一绑定，一个软件账号绑定一台电脑，新设备首次注册赠送 1 天试用；到期后联系管理员在后台续期即可，抖音账号扫码切换不受限制。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 长文内容（利于百度收录与关键词覆盖） ============ -->
+  <section class="article">
+    <div class="wrap inner">
+      <h2>关于抖音直播间自动回复与场控</h2>
+      <p>
+        直播间的公屏是转化和留存的主战场。观众问价格没人答、进场没人欢迎、中奖口令数不清，这些细节叠加起来，直接决定观众停留时长和下单意愿。但主播分身乏术是常态：一边讲品、一边盯公屏，几乎不可能两头兼顾。抖音直播间自动回复工具解决的就是这个问题——把高频、标准化的公屏互动交给软件，让人专注内容和转化。
+      </p>
+      <h3>固定话术和大模型回复，怎么选</h3>
+      <p>
+        固定话术适合答案唯一的问题：价格、发货时间、活动规则，答得准、快、稳，配合 {昵称} 变量和多句随机，重复感也能压下去。大模型回复适合开放性问题：观众换个说法问「这个适合油皮吗」，关键词规则就接不住了，语义理解才能接住。直播弹幕助手把两种模式做在同一个规则里，答案确定的问题走固定话术，长尾问题交给大模型，成本和效果都不浪费。
+      </p>
+      <h3>自动回复为什么需要发送排队</h3>
+      <p>
+        很多人忽略这一点：自动回复本身也可能成为风险源。短时间高频发送、欢迎语重复轰炸，比不回复更容易被平台判定异常。直播弹幕助手内置发送排队机制——所有自动回复先进队列，冷却中按优先级依次发出，同一人的欢迎和感谢一场只说一次。自动化要做的不是「说得越多越好」，而是「像人一样有节制地说」。
+      </p>
+      <h3>数据安全：密钥和规则只在你电脑里</h3>
+      <p>
+        大模型接口的密钥、回复规则、直播间收藏，全部保存在本机 exe 同目录的 datas/ 文件夹，不上传任何云端。对于把直播间当生意的团队来说，话术库和运营数据不出内网，是选型时最容易被忽略、也最重要的底线之一。
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 下载 CTA ============ -->
+  <section id="download">
+    <div class="wrap">
+      <div class="cta">
+        <h2>下一场直播，让软件替你盯公屏</h2>
+        <p>下载 Windows 安装包，双击运行，注册即赠 1 天试用。当前版本 v1.0.0，国内用户优先从 Gitee 下载。</p>
+        <div class="row">
+          <a class="btn btn-primary" href="https://gitee.com/jiangbo/dy_live_tool/releases" rel="nofollow noopener" target="_blank">Gitee 下载（国内优先）</a>
+          <a class="btn btn-ghost" href="https://github.com/myhgjb666/dy_live_tool/releases" rel="nofollow noopener" target="_blank">GitHub 下载</a>
+          <a class="btn btn-ghost" href="/download">下载页 · 系统要求与版本说明</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 联系购买 ============ -->
+  <section id="contact" class="shots-wrap">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">联系购买</span>
+        <h2>购买授权、续期与批量开通</h2>
+        <p>新设备首次注册赠 1 天试用，正式版按设备授权，到期联系管理员续期</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>购买前先了解这几件事</h3>
+          <p><b>试用：</b>新设备首次注册赠送 1 天试用，功能与正式版完全一致，先跑通再决定。</p>
+          <p><b>授权方式：</b>一个软件账号绑定一台电脑；到期后由管理员在后台续期，软件与全部配置无需重装。</p>
+          <p><b>多账号：</b>抖音账号可自由扫码切换，主号小号规则与收藏分开保存，不按抖音号数量另收费。</p>
+          <p><b>购买 / 续期 / 批量授权 / 功能定制：</b>微信扫码添加管理员，备注「弹幕助手」，说明直播间数量和使用场景，会推荐合适的套餐。</p>
+          <p class="table-note">工作时间一般几分钟内回复。软件内也有同样的联系方式：登录页与「自动化设置 → 更多」页签均可扫码。</p>
+        </div>
+        <div class="contact-qr">
+          <img src="/assets/wechat-qr.png" alt="直播弹幕助手管理员微信二维码，扫码添加好友咨询购买套餐与授权续期" width="747" height="816" loading="lazy">
+          <b>微信扫码 · 添加管理员</b>
+          <span>购买套餐 / 授权续期 / 批量开通 / 功能定制</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="margin-bottom:10px"><span class="logo-mark" aria-hidden="true">弹</span>直播弹幕助手</div>
+        <div>抖音直播间自动回复与场控工具 · Windows 桌面端 · v1.0.0</div>
+      </div>
+      <nav class="foot-links" aria-label="页脚导航">
+        <a href="#features">功能一览</a>
+        <a href="#shots">界面实拍</a>
+        <a href="#compare">竞品对比</a>
+        <a href="/guide">使用教程</a>
+        <a href="/download">下载与版本</a>
+        <a href="#contact">联系购买</a>
+        <a href="https://gitee.com/jiangbo/dy_live_tool" rel="nofollow noopener" target="_blank">Gitee 仓库</a>
+        <a href="/sitemap.xml">网站地图</a>
+      </nav>
+    </div>
+    <div class="icp">
+      © 2026 直播弹幕助手 · 保留所有权利　|　
+      <!-- ★ 备案信息：如已备案请填写真实备案号；未备案可整段删除（境外托管不强制） -->
+      <a href="https://beian.miit.gov.cn/" rel="nofollow noopener" target="_blank">备案信息待补充</a>
+      <br>
+      本软件不是抖音官方产品。请使用自己的账号，只辅助自己有权操作的直播间；不要用于骚扰、刷量、违规引流或未授权采集他人数据，请遵守平台规则与当地法律。接口与页面结构可能随平台更新变化。
+    </div>
+  </div>
+</footer>
+
+<!--
+     ============ 百度搜索优化（可选但推荐） ============
+     ① 百度自动推送：下面脚本会在页面被访问时自动把当前 URL 提交给百度。
+        需先在「百度搜索资源平台」完成站点验证（见 <head> 的 baidu-site-verification），
+        未验证时脚本会静默失败，不影响页面。
+     ② 百度统计：把 hm.js? 后面的 ID 换成你自己的统计 ID，再把整段注释去掉即可。
+     ③ 主动推送：本地执行 python3 baidu_push.py --token 你的token --sitemap sitemap.xml
+-->
+<script>
+(function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  } else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<!-- 百度统计（拿到统计 ID 后删除本段首尾的注释符号即可启用）
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?替换为你的统计ID";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+-->
+
+</body>
+</html>
