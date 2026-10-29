@@ -326,3 +326,57 @@ footer{border-top:1px solid var(--line);padding:38px 0;background:#fff;font-size
 .contact-inline b{display:block;font-size:15px;margin-bottom:4px}
 .contact-inline p{font-size:13.5px;color:var(--ink-3);margin:0;max-width:560px}
 @media (max-width:960px){.contact-grid{grid-template-columns:1fr}}
+
+/* ---------- v1.1.0 双平台首发横幅 ---------- */
+.dual-platform-band {
+  background: linear-gradient(135deg, #fff8f3 0%, #fdf3f0 50%, #fff 100%);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 60px 0;
+}
+.dp-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 36px;
+  align-items: center;
+}
+.dp-text .eyebrow { color: #fe2c55; }
+.dp-text h2 { font-size: 26px; margin: 10px 0 12px; color: var(--ink-1); }
+.dp-text p { color: var(--ink-3); font-size: 15px; line-height: 1.8; margin-bottom: 14px; }
+.dp-text p code { background: #fff; padding: 1px 6px; border: 1px solid var(--line); border-radius: 4px; font-size: 13.5px; }
+.dp-points { padding-left: 20px; color: var(--ink-2); }
+.dp-points li { font-size: 14.5px; line-height: 1.9; }
+
+.dp-visual {
+  display: flex; flex-direction: column; gap: 14px;
+  background: #fff; padding: 20px; border-radius: 14px;
+  border: 1px solid var(--line); box-shadow: var(--shadow);
+}
+.dp-tab {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 14px; border-radius: 999px;
+  background: var(--bg-soft); color: var(--ink-2);
+  font-size: 14px; align-self: flex-start;
+  border: 1px solid var(--line);
+}
+.dp-tab-on { background: #0f1115; color: #fff; border-color: transparent; }
+.dp-dot { width: 8px; height: 8px; border-radius: 50%; }
+.dp-douyin { background: #fe2c55; }
+.dp-xhs    { background: #ff2741; }
+.dp-card {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.dp-line { height: 8px; border-radius: 4px; background: #e5e7eb; }
+.dp-line-1 { width: 40%; }
+.dp-line-2 { width: 90%; }
+.dp-line-3 { width: 75%; }
+.dp-line-4 { width: 60%; background: #fe2c55; opacity: 0.4; }
+
+@media (max-width: 880px) {
+  .dp-row { grid-template-columns: 1fr; }
+  .dp-visual { order: -1; }
+}
