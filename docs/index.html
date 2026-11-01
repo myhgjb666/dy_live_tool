@@ -10,8 +10,8 @@
      · 更换域名时执行 ./set-domain.sh 你的新域名.com 一键同步
      ============================================================ -->
 <title>抖音直播弹幕助手_直播间自动回复与场控工具-Windows版下载</title>
-<meta name="description" content="抖音直播弹幕助手（Windows 桌面端）：扫码登录自己的抖音账号，实时监听直播间弹幕，关键字固定话术或大模型自动回复，支持进场欢迎、礼物感谢、定时弹幕、口令计数与本场简报，规则与密钥仅存本机。">
-<meta name="keywords" content="抖音直播弹幕助手,直播间自动回复软件,抖音弹幕自动回复工具,直播间关键字回复,直播场控软件,抖音直播助手,进场欢迎,礼物感谢,弹幕计数">
+<meta name="description" content="抖音直播弹幕助手（Windows 桌面端）：扫码登录自己的抖音账号，实时监听直播间弹幕，关键字固定话术或大模型自动回复，支持进场欢迎、礼物感谢、定时弹幕、口令计数与本场简报，规则与密钥仅存本机。月卡 49 元起，大模型使用自己的 API Key。">
+<meta name="keywords" content="抖音直播弹幕助手,直播间自动回复软件,抖音弹幕自动回复工具,直播间关键字回复,直播场控软件,抖音直播助手,进场欢迎,礼物感谢,弹幕计数,直播弹幕助手多少钱,直播间自动回复软件价格">
 <link rel="canonical" href="https://dylive.tgmship.com/">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <meta name="author" content="直播弹幕助手">
@@ -54,10 +54,17 @@
   "url": "https://dylive.tgmship.com/",
   "downloadUrl": "https://gitee.com/jiangbo/dy_live_tool/releases",
   "offers": {
-    "@type": "Offer",
-    "price": "0",
+    "@type": "AggregateOffer",
     "priceCurrency": "CNY",
-    "description": "新设备首次注册赠 1 天试用，正式版按设备授权"
+    "lowPrice": "49",
+    "highPrice": "399",
+    "offerCount": "3",
+    "description": "按设备授权，新设备首次注册赠 1 天试用；大模型使用用户自己的 API Key",
+    "offers": [
+      { "@type": "Offer", "name": "月卡", "price": "49", "priceCurrency": "CNY", "description": "1 个月授权，支持抖音 + 小红书双平台" },
+      { "@type": "Offer", "name": "季卡", "price": "129", "priceCurrency": "CNY", "description": "3 个月授权，约 43 元 / 月" },
+      { "@type": "Offer", "name": "年卡", "price": "399", "priceCurrency": "CNY", "description": "12 个月授权，约 33 元 / 月" }
+    ]
   },
   "featureList": [
     "抖音扫码登录",
@@ -87,6 +94,22 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "不是抖音官方产品。软件使用你自己的抖音账号扫码登录，只辅助你对自己有权操作的直播间做弹幕互动与场控。请遵守平台规则与当地法律，不要用于骚扰、刷量、违规引流或未授权采集他人数据。软件内置发送排队与冷却机制、同一人一场只欢迎/感谢一次，避免刷屏行为。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "直播弹幕助手多少钱？套餐怎么选？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "按设备授权，三种周期：月卡 49 元、季卡 129 元（约 43 元每月）、年卡 399 元（约 33 元每月），抖音与小红书双平台全部功能一致。新设备首次注册赠 1 天试用；多设备或团队批量授权、功能定制需联系管理员另议。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "大模型回复怎么计费？软件会代充额度吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不会代充，也不转卖额度。软件兼容 OpenAI /v1 接口，你填入自己的接口地址与 Key，模型用量由你直接向模型厂商付费，软件只负责调用。密钥与规则仅保存在本机 datas/ 目录，不上传云端。"
       }
     },
     {
@@ -198,7 +221,7 @@
 }
 </script>
 
-<link rel="stylesheet" href="/assets/style.v2.css">
+<link rel="stylesheet" href="/assets/style.v3.css">
 </head>
 <body>
 
@@ -212,6 +235,7 @@
       <a href="#shots">界面实拍</a>
       <a href="#compare">竞品对比</a>
       <a href="/guide">使用教程</a>
+      <a href="#pricing">套餐价格</a>
       <a href="#contact">联系购买</a>
     </nav>
     <a class="btn btn-primary btn-sm" href="/download">下载 Windows 版</a>
@@ -514,6 +538,79 @@
     </div>
   </section>
 
+  <!-- ============ 套餐价格 ============ -->
+  <section id="pricing">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">套餐价格</span>
+        <h2>按设备授权，三种周期随你选</h2>
+        <p>一个软件账号绑定一台电脑，抖音 / 小红书双平台全部功能无差别开放；新设备首次注册赠 1 天试用</p>
+      </div>
+      <div class="price-grid">
+        <article class="price-card">
+          <h3>月卡</h3>
+          <p class="price-desc">先跑一个月，验证效果</p>
+          <div class="price-amount"><span class="cur">¥</span>49<span class="unit">/ 月</span></div>
+          <p class="price-sub">按月开通，随时续费</p>
+          <ul class="price-list">
+            <li>抖音 + 小红书双平台</li>
+            <li>关键字回复 / 大模型回复</li>
+            <li>进场欢迎、礼物感谢、定时弹幕、口令计数</li>
+            <li>1 台电脑授权（抖音号不限切换）</li>
+            <li>本场简报与场景模板</li>
+          </ul>
+          <a class="btn btn-ghost" href="#contact">微信咨询开通</a>
+        </article>
+
+        <article class="price-card featured">
+          <span class="price-badge">多数人选择</span>
+          <h3>季卡</h3>
+          <p class="price-desc">三个月一续，成本更可控</p>
+          <div class="price-amount"><span class="cur">¥</span>129<span class="unit">/ 季</span></div>
+          <p class="price-sub">约 <b>43 元 / 月</b>，比月卡省 18 元</p>
+          <ul class="price-list">
+            <li>抖音 + 小红书双平台</li>
+            <li>关键字回复 / 大模型回复</li>
+            <li>进场欢迎、礼物感谢、定时弹幕、口令计数</li>
+            <li>1 台电脑授权（抖音号不限切换）</li>
+            <li>本场简报与场景模板</li>
+          </ul>
+          <a class="btn btn-primary" href="#contact">微信咨询开通</a>
+        </article>
+
+        <article class="price-card">
+          <h3>年卡</h3>
+          <p class="price-desc">长期开播，单月成本最低</p>
+          <div class="price-amount"><span class="cur">¥</span>399<span class="unit">/ 年</span></div>
+          <p class="price-sub">约 <b>33 元 / 月</b>，比月卡省 189 元</p>
+          <ul class="price-list">
+            <li>抖音 + 小红书双平台</li>
+            <li>关键字回复 / 大模型回复</li>
+            <li>进场欢迎、礼物感谢、定时弹幕、口令计数</li>
+            <li>1 台电脑授权（抖音号不限切换）</li>
+            <li>本场简报与场景模板</li>
+            <li>版本升级与新平台接入免费</li>
+          </ul>
+          <a class="btn btn-ghost" href="#contact">微信咨询开通</a>
+        </article>
+      </div>
+
+      <div class="price-notes">
+        <div class="price-note-item">
+          <b>大模型用你自己的 Key，软件不代充</b>
+          软件兼容 OpenAI /v1 接口，填自己的接口地址与密钥即可。模型用量按实际消耗直接付给模型厂商，不经过我们，也不存在加价转卖额度；规则与密钥只存本机 <code>datas/</code>，不上传云端。
+        </div>
+        <div class="price-note-item">
+          <b>授权规则与试用</b>
+          一个软件账号绑定一台电脑，到期联系管理员续期，软件与全部配置无需重装；新设备首次注册赠 1 天试用，功能与正式版完全一致。同一台电脑上抖音 / 小红书账号可自由切换，不按账号数另收费。
+        </div>
+      </div>
+      <p class="price-foot">
+        以上为单设备标准价；多设备 / 团队批量授权、功能定制请<a href="#contact" style="color:#fe2c55;font-weight:600">联系管理员</a>另议。
+      </p>
+    </div>
+  </section>
+
   <!-- ============ FAQ ============ -->
   <section id="faq" class="shots-wrap">
     <div class="wrap">
@@ -523,6 +620,14 @@
       </div>
       <div class="faq">
         <details open>
+          <summary>直播弹幕助手多少钱？套餐怎么选？</summary>
+          <p>按设备授权，三种周期：<b>月卡 49 元</b>、<b>季卡 129 元</b>（约 43 元每月）、<b>年卡 399 元</b>（约 33 元每月），抖音与小红书双平台全部功能一致，抖音号可自由切换不另收费。新设备首次注册赠 1 天试用；多设备或团队批量授权、功能定制联系管理员另议。</p>
+        </details>
+        <details>
+          <summary>大模型回复怎么计费？软件会代充额度吗？</summary>
+          <p>不会代充，也不转卖额度。软件兼容 OpenAI /v1 接口，你填入自己的接口地址与 Key，模型用量由你直接向模型厂商付费，软件只负责调用。这样可以按需选模型、随时换厂商，成本透明；密钥与规则仅保存在本机 datas/ 目录，不上传云端。</p>
+        </details>
+        <details>
           <summary>直播弹幕助手是抖音官方产品吗？会不会违规？</summary>
           <p>不是抖音官方产品。软件使用你自己的抖音账号扫码登录，只辅助你对自己有权操作的直播间做弹幕互动与场控。请遵守平台规则与当地法律，不要用于骚扰、刷量、违规引流或未授权采集他人数据。软件内置发送排队与冷却机制、同一人一场只欢迎/感谢一次，避免刷屏行为。</p>
         </details>
@@ -598,6 +703,8 @@
       <div class="contact-grid">
         <div class="contact-card">
           <h3>购买前先了解这几件事</h3>
+          <p><b>套餐：</b>月卡 ¥49 / 季卡 ¥129（约 43 元每月）/ 年卡 ¥399（约 33 元每月），均为单设备授权，抖音 + 小红书双平台全部功能。</p>
+          <p><b>大模型 Key：</b>软件不代充、不转卖额度，用你自己的 OpenAI 兼容接口地址与 Key，费用直接付给模型厂商。</p>
           <p><b>试用：</b>新设备首次注册赠送 1 天试用，功能与正式版完全一致，先跑通再决定。</p>
           <p><b>授权方式：</b>一个软件账号绑定一台电脑；到期后由管理员在后台续期，软件与全部配置无需重装。</p>
           <p><b>多账号：</b>抖音账号可自由扫码切换，主号小号规则与收藏分开保存，不按抖音号数量另收费。</p>
@@ -628,6 +735,7 @@
         <a href="#compare">竞品对比</a>
         <a href="/guide">使用教程</a>
         <a href="/download">下载与版本</a>
+        <a href="#pricing">套餐价格</a>
         <a href="#contact">联系购买</a>
         <a href="https://gitee.com/jiangbo/dy_live_tool" rel="nofollow noopener" target="_blank">Gitee 仓库</a>
         <a href="/sitemap.xml">网站地图</a>
